@@ -1,0 +1,21 @@
+# ninja log v5
+0	216	1648224251192286592	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	4d35285ed428022d
+1414	1441	1648224252417062260	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	68e09128db74d688
+217	1380	1648224252356299393	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	25cb73ec3fee6d69
+1586	1633	1648224252609839055	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	3ad12581e08a342
+217	1380	1648224252356299393	/Users/marklitvinov/Desktop/hse/coding/3_semester/cpp-base-hse-2022/projects/image_processor/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	25cb73ec3fee6d69
+0	216	1648224251192286592	/Users/marklitvinov/Desktop/hse/coding/3_semester/cpp-base-hse-2022/projects/image_processor/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	4d35285ed428022d
+1380	1414	1648224252390003620	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	6b2f76cfa2b78a21
+1380	1414	1648224252390003620	/Users/marklitvinov/Desktop/hse/coding/3_semester/cpp-base-hse-2022/projects/image_processor/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	6b2f76cfa2b78a21
+1586	1633	1648224252609839055	/Users/marklitvinov/Desktop/hse/coding/3_semester/cpp-base-hse-2022/projects/image_processor/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	3ad12581e08a342
+1544	1586	1648224252562307426	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	88a99ced61b982b2
+1414	1441	1648224252417062260	/Users/marklitvinov/Desktop/hse/coding/3_semester/cpp-base-hse-2022/projects/image_processor/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	68e09128db74d688
+1441	1478	1648224252454243264	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	efbd15b9f453215a
+1441	1478	1648224252454243264	/Users/marklitvinov/Desktop/hse/coding/3_semester/cpp-base-hse-2022/projects/image_processor/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	efbd15b9f453215a
+1544	1586	1648224252562307426	/Users/marklitvinov/Desktop/hse/coding/3_semester/cpp-base-hse-2022/projects/image_processor/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	88a99ced61b982b2
+1478	1512	1648224252487760407	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	3e036b79e87659c2
+1512	1544	1648224252519925100	/Users/marklitvinov/Desktop/hse/coding/3_semester/cpp-base-hse-2022/projects/image_processor/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	8ce93da8b66e1c0b
+1478	1512	1648224252487760407	/Users/marklitvinov/Desktop/hse/coding/3_semester/cpp-base-hse-2022/projects/image_processor/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	3e036b79e87659c2
+1586	1633	1648224252609839055	/Users/marklitvinov/Desktop/hse/coding/3_semester/cpp-base-hse-2022/projects/image_processor/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	3ad12581e08a342
+1512	1544	1648224252519925100	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	8ce93da8b66e1c0b
+1586	1633	1648224252609839055	CMakeFiles/googletest-populate-complete	3ad12581e08a342

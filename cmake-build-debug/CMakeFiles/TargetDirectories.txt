@@ -1,0 +1,4 @@
+/Users/marklitvinov/Desktop/hse/coding/3_semester/cpp-base-hse-2022/projects/image_processor/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/marklitvinov/Desktop/hse/coding/3_semester/cpp-base-hse-2022/projects/image_processor/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/marklitvinov/Desktop/hse/coding/3_semester/cpp-base-hse-2022/projects/image_processor/cmake-build-debug/CMakeFiles/image_processor.dir
+/Users/marklitvinov/Desktop/hse/coding/3_semester/cpp-base-hse-2022/projects/image_processor/cmake-build-debug/CMakeFiles/contrib_catch_main.dir
