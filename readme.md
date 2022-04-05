@@ -25,6 +25,8 @@ In this example
 The filter list may be empty, then the image must be saved unchanged.
 Filters are applied in the order in which they are listed in the command line arguments.
 
+![example](results/tree.bmp)
+
 ## Filters
 
 In the formulas, we further assume that each color component
@@ -62,20 +64,40 @@ Crops the image to the specified width and height. The upper left part of the im
 
 If the requested width or height exceeds the dimensions of the original image, the available part of the image is given.
 
+Command: `-crop 400 400`
+Result:
+
+![example](results/crop.bmp)
+
 #### [Grayscale](filters/grayscale_filter.cpp) (-gs)
 Converts the image to grayscale using the formula
 
 ![encoding](https://latex.codecogs.com/svg.image?R'%20=%20G'%20=%20B'%20=0.299%20R%20&plus;%200%20.587%20G%20&plus;%200%20.%20114%20B)
+
+Command: `-gs`
+Result:
+
+![example](results/gs.bmp)
 
 #### [Negative](filters/negative_filter.cpp) (-neg)
 Converts an image to a negative using the formula
 
 ![encoding](https://latex.codecogs.com/svg.image?R'%20=%201%20-%20R,%20G'%20=%201%20-%20G,%20B'%20=%201%20-%20B)
 
+Command: `-neg`
+Result:
+
+![example](results/neg.bmp)
+
 #### [Sharpening](filters/sharp_filter.cpp) (-sharp)
 Sharpening. It is applied by using a matrix
 
 ![encoding](https://latex.codecogs.com/svg.image?%5Cbegin%7Bbmatrix%7D%20&%20-1%20&%20%20%5C%5C-1%20&%205%20&%20-1%20%5C%5C%20&%20-1%20&%20%20%5C%5C%5Cend%7Bbmatrix%7D)
+
+Command: `-sharp`
+Result:
+
+![example](results/shrp.bmp)
 
 #### [Edge Detection](filters/edge_detection_filter.cpp) (-edge threshold)
 Border selection. The image is converted to grayscale and a matrix is applied
@@ -83,6 +105,11 @@ Border selection. The image is converted to grayscale and a matrix is applied
 ![encoding](https://latex.codecogs.com/svg.image?%5Cbegin%7Bbmatrix%7D%20&%20-1%20&%20%20%5C%5C-1%20&%204%20&%20-1%20%5C%5C%20&%20-1%20&%20%20%5C%5C%5Cend%7Bbmatrix%7D)
 
 Pixels with a value exceeding the threshold are colored white, the rest are black.
+
+Command: `-edge 15`
+Result:
+
+![example](results/edge.bmp)
 
 #### [Gaussian Blur](filters/gaussian_blur.cpp) (-blur sigma)
 [Gaussian blur](https://ru.wikipedia.org/wiki/Blurry_gaussu),
@@ -92,10 +119,50 @@ The value of each of the pixel colors `C[x0][y0]` is determined by the formula
 
 ![encoding](https://latex.codecogs.com/svg.image?C%5Bx_0%5D%5By_0%5D%20=%20%5Csum_%7Bx=0,y=0%7D%5E%7Bwidth-1,%20height-1%7DC%5Bx%5D%5By%5D%5Cfrac%7B1%7D%7B%5Csqrt%5B%5D%7B2%5Cpi%5Csigma%5E2%7D%7De%5E%7B-%5Cfrac%7B%5Cleft%7Cx_o-x%5Cright%7C%5E2%20&plus;%20%5Cleft%7Cy_o-y%5Cright%7C%5E2%7D%7B2%5Csigma%5E2%7D%7D)
 
+Command: `-blur 3`
+Result:
+
+![example](results/blur.bmp)
+
 #### [Crystallize](filters/crystallize_filter.cpp) (-crystallize points_amount)
 This filter turns picture into set of crystalls with the same color, the parameter is the amount of crystalls.
 
 It works like this: first, an array of random points of a given size is created, after that the value of each pixel turns into the value of the closest pixel from our array. That is how it works.
 
+Command: `-crystallu
+ize 2000`
+Result:
+
+![example](results/crystallize.bmp)
+
 #### [Crystallize advanced](filters/crystallize_advanced_filter.cpp) (-crystallize_advanced points_amount)
 Advanced version of the previous one, but here the value of pixel turns into a weighted sum of two closest points with the weights proportional to the default distanses between the points.
+
+Command: `-crystallize_advanced 2000`
+Result:
+
+![example](results/crystallize_advanced.bmp)
+
+#### Some filter combinations
+Command: `-crystallize_advanced 2000 -blur 3`
+Result:
+
+![example](results/extra_0.bmp)
+
+
+Command: `-crystallize_advanced 2000 -gs`
+Result:
+
+![example](results/extra_1.bmp)
+
+
+Command: `-sharp -edge 15`
+Result:
+
+![example](results/extra_2.bmp)
+
+
+Command: `-sharp -gs`
+Result:
+
+![example](results/extra_3.bmp)
