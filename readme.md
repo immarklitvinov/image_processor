@@ -2,6 +2,8 @@
 
 This project is a part of learning to code with C++. This is a console app to edit pictures in 24-bit [BMP](http://en.wikipedia.org/wiki/BMP_file_format) format.
 
+*Attention! This .md page takes a while to load the example pictures from ./results folder .*
+
 ## Format of command line arguments
 
 Description of the format of command line arguments:
