@@ -15,7 +15,7 @@ When running without arguments, the program outputs help.
 ### Example
 This is our example image:
 
-![example](results/tree.bmp)
+![example](results/tree.bmp "example")
 
 Let us apply these filters:
 
@@ -29,7 +29,7 @@ In this example
 
 Our result here is following:
 
-![example](results/extra_0.bmp)
+![output](results/extra_0.bmp)
 
 The filter list may be empty, then the image must be saved unchanged.
 Filters are applied in the order in which they are listed in the command line arguments.
@@ -38,7 +38,7 @@ Filters are applied in the order in which they are listed in the command line ar
 
 In the formulas, we further assume that each color component
 is represented by a real number from 0 to 1. Pixel colors
-are represented by triples `(R, G, B)'. Thus, `(0, 0, 0)` – black, 
+are represented by triples `(R, G, B)`. Thus, `(0, 0, 0)` – black, 
 `(1, 1, 1)` – white.
 
 ### List of basic filters
@@ -74,7 +74,7 @@ If the requested width or height exceeds the dimensions of the original image, t
 Command: `-crop 400 400`
 Result:
 
-![example](results/crop.bmp)
+![crop result](results/crop.bmp)
 
 #### [Grayscale](filters/grayscale_filter.cpp) (-gs)
 Converts the image to grayscale using the formula
@@ -84,7 +84,7 @@ Converts the image to grayscale using the formula
 Command: `-gs`
 Result:
 
-![example](results/gs.bmp)
+![greyscale result](results/gs.bmp)
 
 #### [Negative](filters/negative_filter.cpp) (-neg)
 Converts an image to a negative using the formula
@@ -94,7 +94,7 @@ Converts an image to a negative using the formula
 Command: `-neg`
 Result:
 
-![example](results/neg.bmp)
+![negative result](results/neg.bmp)
 
 #### [Sharpening](filters/sharp_filter.cpp) (-sharp)
 Sharpening. It is applied by using a matrix
@@ -104,7 +104,7 @@ Sharpening. It is applied by using a matrix
 Command: `-sharp`
 Result:
 
-![example](results/shrp.bmp)
+![sharpening result](results/shrp.bmp)
 
 #### [Edge Detection](filters/edge_detection_filter.cpp) (-edge threshold)
 Border selection. The image is converted to grayscale and a matrix is applied
@@ -116,7 +116,7 @@ Pixels with a value exceeding the threshold are colored white, the rest are blac
 Command: `-edge 15`
 Result:
 
-![example](results/edge.bmp)
+![edge detection result](results/edge.bmp)
 
 #### [Gaussian Blur](filters/gaussian_blur.cpp) (-blur sigma)
 [Gaussian blur](https://ru.wikipedia.org/wiki/Blurry_gaussu),
@@ -129,7 +129,7 @@ The value of each of the pixel colors `C[x0][y0]` is determined by the formula
 Command: `-blur 3`
 Result:
 
-![example](results/blur.bmp)
+![Gaussianl blur result](results/blur.bmp)
 
 #### [Crystallize](filters/crystallize_filter.cpp) (-crystallize points_amount)
 This filter turns picture into set of crystalls with the same color, the parameter is the amount of crystalls.
@@ -140,7 +140,7 @@ Command: `-crystallu
 ize 2000`
 Result:
 
-![example](results/crystallize.bmp)
+![crystallize result](results/crystallize.bmp)
 
 #### [Crystallize advanced](filters/crystallize_advanced_filter.cpp) (-crystallize_advanced points_amount)
 Advanced version of the previous one, but here the value of pixel turns into a weighted sum of two closest points with the weights proportional to the default distanses between the points.
@@ -148,23 +148,23 @@ Advanced version of the previous one, but here the value of pixel turns into a w
 Command: `-crystallize_advanced 2000`
 Result:
 
-![example](results/crystallize_advanced.bmp)
+![advanced crystallize result](results/crystallize_advanced.bmp)
 
 #### Some filter combinations
 
 Command: `-crystallize_advanced 2000 -gs`
 Result:
 
-![example](results/extra_1.bmp)
+![extra 1](results/extra_1.bmp)
 
 
 Command: `-sharp -edge 15`
 Result:
 
-![example](results/extra_2.bmp)
+![extra 2](results/extra_2.bmp)
 
 
 Command: `-sharp -gs`
 Result:
 
-![example](results/extra_3.bmp)
+![extra 3](results/extra_3.bmp)
