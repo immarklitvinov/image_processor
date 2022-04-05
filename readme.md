@@ -32,6 +32,9 @@ is represented by a real number from 0 to 1. Pixel colors
 are represented by triples `(R, G, B)'. Thus, `(0, 0, 0)` – black, 
 `(1, 1, 1)` – white.
 
+### List of basic filters
+
+#### [Matrix filter](filters/matrix_filter.cpp) (no user-usage due to it is inside component of the project)
 If the filter is set by a matrix, it means that the value of each of the colors is determined by the weighted sum
 of the values of this color in neighboring pixels in accordance with the matrix. In this case, the target pixel
 corresponds to the central element of the matrix.
@@ -53,8 +56,6 @@ C[x][y] =
 
 When processing pixels close to the edge of the image, part of the matrix may extend beyond the image boundary.
 In this case, we will use the value of the image pixel closest to it as the value of the pixel that goes beyond the border.
-
-### List of basic filters
 
 #### [Crop](filters/crop_filter.cpp) (-crop width height)
 Crops the image to the specified width and height. The upper left part of the image is used.
