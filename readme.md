@@ -13,19 +13,26 @@ Description of the format of command line arguments:
 When running without arguments, the program outputs help.
 
 ### Example
-`./image_processor input.tmp /tmp/output.bmp -crop 800 600 -gs -blur 0.5`
+This is our example image:
+
+![example](results/tree.bmp)
+
+Let us apply these filters:
+
+`./image_processor input.tmp /tmp/output.bmp -crystallize_advanced 2000 -blur 3`
 
 In this example
 1. The image is loaded from the file `input.bmp`
-2. Cropped to an image with the beginning in the upper left corner and the size of 800x600 pixels
-3. Translates to shades of gray
-4. A blur with sigma 0.5 is applied
-5. The resulting image is saved to the file `/tmp/output.bmp`
+2. Advanced crystallize filter with 2000 random points is applied.
+3. A blur with sigma 3 is applied
+4. The resulting image is saved to the file `/tmp/output.bmp`
+
+Our result here is following:
+
+![example](results/extra_0.bmp)
 
 The filter list may be empty, then the image must be saved unchanged.
 Filters are applied in the order in which they are listed in the command line arguments.
-
-![example](results/tree.bmp)
 
 ## Filters
 
@@ -144,11 +151,6 @@ Result:
 ![example](results/crystallize_advanced.bmp)
 
 #### Some filter combinations
-Command: `-crystallize_advanced 2000 -blur 3`
-Result:
-
-![example](results/extra_0.bmp)
-
 
 Command: `-crystallize_advanced 2000 -gs`
 Result:
